@@ -57,3 +57,13 @@ def normalize_dataframe(df):
            # Pour les types non gérés (Booleans, Arrays, etc.)
            exprs.append(col_expr)
    return df.select(*exprs)
+
+
+def getTable(spark, schema:str ,table_name:str):
+    """
+    Récupère la table Spark à partir du nom de la table.
+    :param spark: SparkSession
+    :param schema: nom du schéma
+    :param table_name: nom de la table
+    """
+    return spark.table(schema+"."+table_name)
