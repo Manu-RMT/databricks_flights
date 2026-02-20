@@ -60,7 +60,7 @@ dlt.create_auto_cdc_flow(
     target = "silver_flights_flights",
     source = "silver_flights_stage_flights",
     keys = ["flight_id"],
-    sequence_by = col("flight_id"),
+    sequence_by = col("modifiedDate"),
     stored_as_scd_type = 1
 )
 
@@ -85,7 +85,7 @@ dlt.create_auto_cdc_flow(
     target = "silver_flights_customers",
     source = "silver_flights_stage_customers",
     keys = ["passenger_id"],
-    sequence_by = col("passenger_id"),
+    sequence_by = col("modifiedDate"),
     stored_as_scd_type = 1
 )
 
@@ -110,13 +110,13 @@ dlt.create_auto_cdc_flow(
     target = "silver_flights_airports",
     source = "silver_flights_stage_airports",
     keys = ["airport_id"],
-    sequence_by = col("airport_id"),
+    sequence_by = col("modifiedDate"),
     stored_as_scd_type = 1
 )
 
 
 ####################################################################
-# Silver Business View (group all transformations)
+# Silver Business View (group all transformations) - Juste pour avoir une vue globale 
 ####################################################################
 
 @dlt.table(name="silver_flights_business")
