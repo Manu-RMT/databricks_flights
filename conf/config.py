@@ -29,4 +29,7 @@ BRONZE_ZONE = f"{CATALOG}.{BRONZE_SCHEMA}"
 SILVER_ZONE = f"{CATALOG}.{SILVER_SCHEMA}"
 GOLD_ZONE = f"{CATALOG}.{GOLD_SCHEMA}"
 
-
+# ----------------------
+# PATH SAVE FILES GOLD
+# ----------------------
+GOLD_PATH_DATA = f"/Volumes/{CATALOG}/{GOLD_SCHEMA}/goldvolume/data/{PROJET_NAME}/"

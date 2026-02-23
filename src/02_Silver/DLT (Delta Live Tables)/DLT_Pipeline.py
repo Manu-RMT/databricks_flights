@@ -119,13 +119,13 @@ dlt.create_auto_cdc_flow(
 # Silver Business View (group all transformations) - Juste pour avoir une vue globale 
 ####################################################################
 
-@dlt.table(name="silver_flights_business")
-def silver_flights_business():
+# @dlt.table(name="silver_flights_business")
+# def silver_flights_business():
     
-    df = dlt.readStream("silver_flights_bookings") \
-           .join(dlt.readStream("silver_flights_flights"), ["flight_id"]) \
-           .join(dlt.readStream("silver_flights_customers"),["passenger_id"]) \
-           .join(dlt.readStream("silver_flights_airports"), ["airport_id"]) \
-           .drop("modifiedDate")
+#     df = dlt.readStream("silver_flights_bookings") \
+#            .join(dlt.readStream("silver_flights_flights"), ["flight_id"]) \
+#            .join(dlt.readStream("silver_flights_customers"),["passenger_id"]) \
+#            .join(dlt.readStream("silver_flights_airports"), ["airport_id"]) \
+#            .drop("modifiedDate")
     
-    return df
+#     return df
