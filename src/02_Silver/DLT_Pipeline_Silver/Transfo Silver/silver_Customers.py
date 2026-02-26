@@ -12,9 +12,9 @@ def silver_flights_stage_customers():
 
     return (
         spark.readStream.format("delta")
-        .load(BRONZE_CUSTOMERS)   # Nettoyage des métadonnées techniques de l'Auto-Loader
-        .drop("_rescued_data")  # Ajout d'un marqueur de temps pour le traitement (voir analyse plus bas)
-        .withColumn("modifiedDate", current_timestamp())
+        .load(BRONZE_CUSTOMERS)  
+        .drop("_rescued_data") # Nettoyage des métadonnées techniques de l'Auto-Loader
+        .withColumn("modifiedDate", current_timestamp()) # Ajout d'un marqueur de temps pour le traitement
     )
 
 # --- ZONE DE STOCKAGE (SILVER) ---

@@ -2,6 +2,7 @@
 
 import sys
 sys.path.append("/Workspace/Users/mandu543@gmail.com/databricks-flights")
+import json
 
 # -----------------------------
 # Importer la config et transformations
@@ -12,6 +13,7 @@ from pyspark.sql.functions import *
 from pyspark.sql.types import *
 from pyspark.sql.types import NumericType
 from delta.tables import DeltaTable
+from pyspark.sql.window import Window
 
 # -----------------------------
 # Fonctions utilitaires
