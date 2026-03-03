@@ -1,4 +1,4 @@
-# ✈️ Databricks Flights – Architecture Médaillon (Bronze / Silver / Gold)
+# ✈️ Databricks Flights – Architecture Médaillon
 
 ## 📌 Introduction
 
