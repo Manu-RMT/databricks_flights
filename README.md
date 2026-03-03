@@ -25,7 +25,7 @@ avec ingestion incrémentale, traçabilité et modélisation décisionnelle.
 
 ## 📂 Structure des répertoires
 
-IMAGE A mettre sur GIT
+<img width="300" height="550" alt="architecture_project" src="https://github.com/user-attachments/assets/5325cc0f-5d2d-4484-83e8-b82a6706a364" />
 
 ---
 
@@ -103,7 +103,7 @@ Contient :
 
 **JOB Flights BronzeLayer**
 
-![Job Bronze](docs/images/job_bronze.png)
+<img width="750" height="400" alt="JOB couche Bronze" src="https://github.com/user-attachments/assets/577ae49e-2d5a-4950-8447-7960bc3cc5b6" />
 
 ### ⚙️ Process
 
@@ -135,7 +135,7 @@ Contient :
 
 **DLT_Pipeline_Silver (Delta Live Tables)**
 
-![Pipeline Silver](docs/images/pipeline_silver.png)
+<img width="1085" height="488" alt="Pipelines Silver" src="https://github.com/user-attachments/assets/67ce5411-7238-4cd0-aaf5-8ecef30898a1" />
 
 ### ⚙️ Process
 
@@ -165,7 +165,6 @@ Contient :
 
 # 🥇 Étape 3 : Alimentation de la couche Gold
 
-![Structure Gold](docs/images/project_structure.png)
 
 ## 🔄 Process
 
@@ -197,7 +196,30 @@ Un notebook principal orchestre :
 
 ---
 
+
 # 🧠 Architecture Médaillon
- 
- IMAGE A METTRE 
- 
+
+<img width="500" height="500" alt="Pipelines Silver" src="https://github.com/user-attachments/assets/dc0e9860-b6a1-4d6f-a6cf-bdc89ded206a" />
+
+---
+# 🚀 Technologies utilisées
+- Databricks
+- Apache Spark
+- Delta Lake
+- Delta Live Tables
+- Python
+- SQL
+---
+# 🎯 Objectifs pédagogiques
+- Comprendre l’architecture Médaillon
+- Implémenter une ingestion incrémentale
+- Mettre en place un pipeline DLT
+- Gérer des clés techniques en couche Gold
+- Construire un modèle décisionnel performant
+---
+# 📌 Améliorations possibles
+- Ajout de tests unitaires
+- Mise en place CI/CD
+- Ajout de Data Quality avancée
+- Documentation automatique
+- Dashboard BI connecté à la Gold
