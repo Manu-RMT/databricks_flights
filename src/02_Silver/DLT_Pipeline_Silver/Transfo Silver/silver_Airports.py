@@ -8,7 +8,7 @@ from config_pipeline import *
     name="silver_flights_stage_airports",
     comment="Nettoyage initial des données de vols en provenance de Bronze"
 )
-def silver_flights_stage_flights():
+def silver_flights_stage_airports():
 
     return (
         spark.readStream.format("delta")
